@@ -27,7 +27,7 @@ export const Home = () => {
         if (name === "")
             getPokemons()
         for (var i in pokemons) {
-            if (pokemons[i].name.includes(name)) {
+            if (pokemons[i].data.name.includes(name)) {
                 filteredPokemons.push(pokemons[i]);
             }
         }
